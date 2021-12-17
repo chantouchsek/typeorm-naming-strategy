@@ -39,7 +39,7 @@
     "test": "jest --coverage --passWithNoTests --bail",
     "prepublish": "yarn build",
     "prepare": "husky install",
-    "lint": "eslint './src/**/*.{js,ts,tsx}'",
+    "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
     "release": "standard-version && git push --follow-tags origin main && yarn publish"
   },
   "devDependencies": {
