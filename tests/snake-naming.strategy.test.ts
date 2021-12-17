@@ -5,7 +5,7 @@ describe('SnakeNamingStrategy', () => {
 
   beforeAll(() => {
     strategy = new SnakeNamingStrategy();
-  })
+  });
 
   describe('tableName', () => {
     it('should return table name in snake format when custom name was not set', () => {
@@ -47,7 +47,11 @@ describe('SnakeNamingStrategy', () => {
         const testColumnName = 'testColumnName';
         const embeddedPrefixes = ['testPrefix1', 'testPrefix2'];
 
-        const result = strategy.columnName(testColumnName, '', embeddedPrefixes);
+        const result = strategy.columnName(
+          testColumnName,
+          '',
+          embeddedPrefixes,
+        );
 
         expect(result).toBe('test_prefix1_test_prefix2_test_column_name');
       });
@@ -56,7 +60,11 @@ describe('SnakeNamingStrategy', () => {
         const testColumnName = 'testColumnName';
         const embeddedPrefixes = ['testPrefix1', 'testPrefix2'];
 
-        const result = strategy.columnName(testColumnName, testColumnName, embeddedPrefixes);
+        const result = strategy.columnName(
+          testColumnName,
+          testColumnName,
+          embeddedPrefixes,
+        );
         expect(result).toBe('test_prefix1_test_prefix2_testColumnName');
       });
     });
@@ -72,40 +80,60 @@ describe('SnakeNamingStrategy', () => {
   describe('joinColumnName', () => {
     it('should return relation name and referenced column name joined by "_" as snake case', () => {
       const result = strategy.joinColumnName(
-        'testRelationName', 'testReferencedColumnName');
+        'testRelationName',
+        'testReferencedColumnName',
+      );
       expect(result).toBe('test_relation_name_test_referenced_column_name');
     });
   });
 
   describe('joinTableName', () => {
     it('should return table names and first property name as snake case', () => {
-      const result = strategy.joinTableName('firstTable', 'secondTable', 'first.propertyName', 'secondProperty');
+      const result = strategy.joinTableName(
+        'firstTable',
+        'secondTable',
+        'first.propertyName',
+      );
       expect(result).toBe('first_table_first_property_name_second_table');
     });
   });
 
   describe('joinTableColumnName', () => {
     it('should return table name and column name as snake case when columnName was set', () => {
-      const result = strategy.joinTableColumnName('tableName', 'propertyName', 'columnName');
+      const result = strategy.joinTableColumnName(
+        'tableName',
+        'propertyName',
+        'columnName',
+      );
       expect(result).toBe('table_name_column_name');
     });
 
     it('should return table name and property name as snake case when columnName was not set', () => {
-      const result = strategy.joinTableColumnName('tableName', 'propertyName', undefined);
+      const result = strategy.joinTableColumnName(
+        'tableName',
+        'propertyName',
+        undefined,
+      );
       expect(result).toBe('table_name_property_name');
     });
   });
 
   describe('eagerJoinRelationAlias', () => {
     it('should join alias and property path by "_"', () => {
-      const result = strategy.eagerJoinRelationAlias('testAlias', 'test.propertyPath');
+      const result = strategy.eagerJoinRelationAlias(
+        'testAlias',
+        'test.propertyPath',
+      );
       expect(result).toBe('testAlias_test_propertyPath');
     });
   });
 
   describe('classTableInheritanceParentColumnName', () => {
     it('should join parent table name and property name by "_" and return as snake case', () => {
-      const result = strategy.classTableInheritanceParentColumnName('parentTableName', 'testPropertyName');
+      const result = strategy.classTableInheritanceParentColumnName(
+        'parentTableName',
+        'testPropertyName',
+      );
       expect(result).toBe('parent_table_name_test_property_name');
     });
   });
