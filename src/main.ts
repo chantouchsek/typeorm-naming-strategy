@@ -1,7 +1,7 @@
 import { DefaultNamingStrategy, NamingStrategyInterface } from 'typeorm';
 import { snakeCase } from 'typeorm/util/StringUtils';
 
-export default class SnakeNamingStrategy
+export class SnakeNamingStrategy
   extends DefaultNamingStrategy
   implements NamingStrategyInterface
 {
@@ -63,3 +63,5 @@ export default class SnakeNamingStrategy
     return alias + '_' + propertyPath.replace('.', '_');
   }
 }
+
+export default SnakeNamingStrategy;

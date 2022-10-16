@@ -1,4 +1,4 @@
-import SnakeNamingStrategy from '../src/main';
+import { SnakeNamingStrategy } from '../src/main';
 
 describe('SnakeNamingStrategy', () => {
   let strategy: SnakeNamingStrategy;
