@@ -63,3 +63,5 @@ export class SnakeNamingStrategy
     return alias + '_' + propertyPath.replace('.', '_');
   }
 }
+
+export default SnakeNamingStrategy;
