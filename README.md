@@ -81,9 +81,7 @@ import { registerAs } from '@nestjs/config'
 import type { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions'
 import { SnakeNamingStrategy } from 'typeorm-naming-strategy'
 
-export default registerAs(
-  'database',
-  (): MysqlConnectionOptions => ({
+export default registerAs('database', (): MysqlConnectionOptions => ({
     //...
     namingStrategy: new SnakeNamingStrategy(),
     //...
