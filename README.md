@@ -45,7 +45,7 @@ import { createConnection } from 'typeorm';
 import SnakeNamingStrategy from 'typeorm-naming-strategy';
 
 await createConnection({
-  ...
+  //...
   namingStrategy: new SnakeNamingStrategy(), // Here you'r using the strategy!
 });
 ```
@@ -58,7 +58,7 @@ Alternatively you can use it in combination with a `ormconfig.js`
 const SnakeNamingStrategy = require("typeorm-naming-strategy")
 
 module.exports = {
-  ...
+  //...
   namingStrategy: new SnakeNamingStrategy(),
 }
 ```
@@ -69,7 +69,25 @@ Or you can use it in combination with a `ormconfig.ts`
 import SnakeNamingStrategy from 'typeorm-naming-strategy';
 
 module.exports = {
-  ...
+  //...
   namingStrategy: new SnakeNamingStrategy(),
 }
 ```
+
+Use with NestJs configuration
+
+```ts
+import { registerAs } from '@nestjs/config'
+import type { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions'
+import { SnakeNamingStrategy } from 'typeorm-naming-strategy'
+
+export default registerAs(
+  'database',
+  (): MysqlConnectionOptions => ({
+    //...
+    namingStrategy: new SnakeNamingStrategy(),
+    //...
+  })
+)
+```
+
