@@ -1,4 +1,5 @@
 import { SnakeNamingStrategy } from '../src/main';
+import { beforeAll, describe, expect, it } from 'vitest';
 
 describe('SnakeNamingStrategy', () => {
   let strategy: SnakeNamingStrategy;
