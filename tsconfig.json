@@ -12,5 +12,9 @@
     "strict": true,
     "outDir": "dist"
   },
+  "types": [
+    "@types/node",
+    "vitest/globals"
+  ],
   "include": ["src/**/*"]
 }

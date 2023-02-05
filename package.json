@@ -36,7 +36,8 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "test": "jest --coverage --passWithNoTests --bail",
+    "test": "vitest --run",
+    "test:cov": "vitest run --coverage",
     "prepublish": "yarn build",
     "prepare": "husky install",
     "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
@@ -45,25 +46,24 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.0.3",
-    "@types/jest": "^29.1.2",
     "@types/node": "^18.11.0",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
+    "@vitest/coverage-c8": "^0.28.4",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.0",
     "husky": "^8.0.1",
-    "jest": "^29.2.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "rimraf": "^4.0.1",
     "standard-version": "^9.5.0",
-    "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "typeorm": "^0.3",
-    "typescript": "^4.8"
+    "typescript": "^4.8",
+    "vitest": "^0.28.4"
   },
   "peerDependencies": {
     "typeorm": "^0.3"
