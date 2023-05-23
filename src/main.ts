@@ -5,13 +5,13 @@ export class SnakeNamingStrategy
   extends DefaultNamingStrategy
   implements NamingStrategyInterface
 {
-  tableName(className: string, customName: string) {
+  tableName(className: string, customName?: string) {
     return customName ? customName : snakeCase(className);
   }
 
   columnName(
     propertyName: string,
-    customName: string,
+    customName: string | undefined,
     embeddedPrefixes: string[],
   ) {
     return (
