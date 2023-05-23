@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.1...v2.0.2) (2023-05-23)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/checkout from 3.3.0 to 3.5.2 ([4285689](https://github.com/chantouchsek/typeorm-naming-strategy/commit/4285689f4f9743d6e2ebff45a6b4a722e45558dd))
+* **deps:** bump actions/stale from 7.0.0 to 8.0.0 ([5ea1bd6](https://github.com/chantouchsek/typeorm-naming-strategy/commit/5ea1bd63dc88f5bb98b241c02f8bc1beabf9ef97))
+
 ### [2.0.1](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.0...v2.0.1) (2023-02-05)
 
 
