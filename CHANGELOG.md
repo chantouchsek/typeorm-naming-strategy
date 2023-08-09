@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.3](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.2...v2.0.3) (2023-08-09)
+
+
+### Bug Fixes
+
+* :pencil2: remove global from vite ([a50f000](https://github.com/chantouchsek/typeorm-naming-strategy/commit/a50f000331191d6d569fad9f4556db392a8173f7))
+* **deps:** bump actions/checkout from 3.5.2 to 3.5.3 ([9040d96](https://github.com/chantouchsek/typeorm-naming-strategy/commit/9040d96900157be5f3c79ea47073ab682ac32592))
+* **deps:** bump actions/setup-node from 3.6.0 to 3.7.0 ([d180516](https://github.com/chantouchsek/typeorm-naming-strategy/commit/d1805165a58ef3992dbeadc4718cd839de7fe0c6))
+
 ### [2.0.2](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.1...v2.0.2) (2023-05-23)
 
 
