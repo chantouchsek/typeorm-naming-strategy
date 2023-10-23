@@ -44,7 +44,7 @@
     "release": "standard-version && git push --follow-tags origin main && yarn publish"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.7",
+    "@commitlint/cli": "^18.0.0",
     "@commitlint/config-conventional": "^17.6.7",
     "@types/node": "^20.4.9",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
