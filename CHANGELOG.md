@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.4](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.3...v2.0.4) (2023-11-01)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/checkout from 3.5.3 to 3.6.0 ([1e93540](https://github.com/chantouchsek/typeorm-naming-strategy/commit/1e935403515bd0ed3488f9830f17f493b79c8049))
+* **deps:** bump actions/checkout from 3.6.0 to 4.0.0 ([b06d641](https://github.com/chantouchsek/typeorm-naming-strategy/commit/b06d6415290cddedc3e4b4427a2a5525c9f2ee72))
+* **deps:** bump actions/checkout from 4.0.0 to 4.1.0 ([b3d8e14](https://github.com/chantouchsek/typeorm-naming-strategy/commit/b3d8e141a637c550e3f66e105e149c8b49d0276c))
+* **deps:** bump actions/checkout from 4.1.0 to 4.1.1 ([bca09de](https://github.com/chantouchsek/typeorm-naming-strategy/commit/bca09dec73b49eb4ff740c8976dfb538a2a6ec11))
+* **deps:** bump actions/setup-node from 3.7.0 to 3.8.0 ([646e059](https://github.com/chantouchsek/typeorm-naming-strategy/commit/646e05974a5e2b685079fb886f7b943ea0b5d193))
+* **deps:** bump actions/setup-node from 3.8.0 to 3.8.1 ([9147ecb](https://github.com/chantouchsek/typeorm-naming-strategy/commit/9147ecb9fe4eea0c164d7b6a1b84c9001d90a62a))
+* **deps:** bump actions/setup-node from 3.8.1 to 4.0.0 ([28f890a](https://github.com/chantouchsek/typeorm-naming-strategy/commit/28f890ac1886f6dbeb153a18785817f0ae4af8f0))
+
 ### [2.0.3](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.2...v2.0.3) (2023-08-09)
 
 
