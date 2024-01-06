@@ -5,7 +5,7 @@ export class SnakeNamingStrategy
   extends DefaultNamingStrategy
   implements NamingStrategyInterface
 {
-  tableName(className: string, customName?: string) {
+  tableName(className: string, customName?: string): string {
     return customName ? customName : snakeCase(className);
   }
 
@@ -13,18 +13,18 @@ export class SnakeNamingStrategy
     propertyName: string,
     customName: string | undefined,
     embeddedPrefixes: string[],
-  ) {
+  ): string {
     return (
       snakeCase(embeddedPrefixes.concat('').join('_')) +
       (customName ? customName : snakeCase(propertyName))
     );
   }
 
-  relationName(propertyName: string) {
+  relationName(propertyName: string): string {
     return snakeCase(propertyName);
   }
 
-  joinColumnName(relationName: string, referencedColumnName: string) {
+  joinColumnName(relationName: string, referencedColumnName: string): string {
     return snakeCase(relationName + '_' + referencedColumnName);
   }
 
@@ -32,7 +32,7 @@ export class SnakeNamingStrategy
     firstTableName: string,
     secondTableName: string,
     firstPropertyName: string,
-  ) {
+  ): string {
     return snakeCase(
       firstTableName +
         '_' +
@@ -46,7 +46,7 @@ export class SnakeNamingStrategy
     tableName: string,
     propertyName: string,
     columnName?: string,
-  ) {
+  ): string {
     return snakeCase(
       tableName + '_' + (columnName ? columnName : propertyName),
     );
@@ -55,11 +55,11 @@ export class SnakeNamingStrategy
   classTableInheritanceParentColumnName(
     parentTableName: string,
     parentTableIdPropertyName: string,
-  ) {
+  ): string {
     return snakeCase(`${parentTableName}_${parentTableIdPropertyName}`);
   }
 
-  eagerJoinRelationAlias(alias: string, propertyPath: string) {
+  eagerJoinRelationAlias(alias: string, propertyPath: string): string {
     return alias + '_' + propertyPath.replace('.', '_');
   }
 }
