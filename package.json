@@ -1,6 +1,6 @@
 {
   "name": "typeorm-naming-strategy",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "packageManager": "yarn@1.22.22",
   "description": "Custom naming strategies for typeorm",
   "main": "dist/main.js",
