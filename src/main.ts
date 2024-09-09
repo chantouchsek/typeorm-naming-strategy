@@ -1,12 +1,12 @@
-import { DefaultNamingStrategy, NamingStrategyInterface } from 'typeorm';
-import { snakeCase } from 'typeorm/util/StringUtils';
+import { DefaultNamingStrategy } from 'typeorm'
+import { snakeCase } from 'typeorm/util/StringUtils'
+import type { NamingStrategyInterface } from 'typeorm'
 
 export class SnakeNamingStrategy
   extends DefaultNamingStrategy
-  implements NamingStrategyInterface
-{
+  implements NamingStrategyInterface {
   tableName(className: string, customName?: string) {
-    return customName ? customName : snakeCase(className);
+    return customName || snakeCase(className)
   }
 
   columnName(
@@ -15,17 +15,17 @@ export class SnakeNamingStrategy
     embeddedPrefixes: string[],
   ) {
     return (
-      snakeCase(embeddedPrefixes.concat('').join('_')) +
-      (customName ? customName : snakeCase(propertyName))
-    );
+      snakeCase(embeddedPrefixes.concat('').join('_'))
+      + (customName || snakeCase(propertyName))
+    )
   }
 
   relationName(propertyName: string) {
-    return snakeCase(propertyName);
+    return snakeCase(propertyName)
   }
 
   joinColumnName(relationName: string, referencedColumnName: string) {
-    return snakeCase(relationName + '_' + referencedColumnName);
+    return snakeCase(`${relationName}_${referencedColumnName}`)
   }
 
   joinTableName(
@@ -34,12 +34,12 @@ export class SnakeNamingStrategy
     firstPropertyName: string,
   ) {
     return snakeCase(
-      firstTableName +
-        '_' +
-        firstPropertyName.replace(/\./gi, '_') +
-        '_' +
-        secondTableName,
-    );
+      `${firstTableName
+      }_${
+        firstPropertyName.replace(/\./g, '_')
+      }_${
+        secondTableName}`,
+    )
   }
 
   joinTableColumnName(
@@ -48,20 +48,20 @@ export class SnakeNamingStrategy
     columnName?: string,
   ) {
     return snakeCase(
-      tableName + '_' + (columnName ? columnName : propertyName),
-    );
+      `${tableName}_${columnName || propertyName}`,
+    )
   }
 
   classTableInheritanceParentColumnName(
     parentTableName: string,
     parentTableIdPropertyName: string,
   ) {
-    return snakeCase(`${parentTableName}_${parentTableIdPropertyName}`);
+    return snakeCase(`${parentTableName}_${parentTableIdPropertyName}`)
   }
 
   eagerJoinRelationAlias(alias: string, propertyPath: string) {
-    return alias + '_' + propertyPath.replace('.', '_');
+    return `${alias}_${propertyPath.replace('.', '_')}`
   }
 }
 
-export default SnakeNamingStrategy;
+export default SnakeNamingStrategy

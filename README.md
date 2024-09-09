@@ -13,7 +13,7 @@ For example, using the snake strategy, if you have a model like this:
 ```typescript
 class User {
   @Column()
-  createdAt;
+  createdAt
 }
 ```
 
@@ -40,14 +40,14 @@ yarn add typeorm-naming-strategy
 ## Usage
 
 ```ts
-import { createConnection } from 'typeorm';
+import { createConnection } from 'typeorm'
 // import { SnakeNamingStrategy } from 'typeorm-naming-strategy';
-import SnakeNamingStrategy from 'typeorm-naming-strategy';
+import SnakeNamingStrategy from 'typeorm-naming-strategy'
 
 await createConnection({
-  //...
+  // ...
   namingStrategy: new SnakeNamingStrategy(), // Here you'r using the strategy!
-});
+})
 ```
 
 Alternatively you can use it in combination with a `ormconfig.js`
@@ -55,10 +55,10 @@ Alternatively you can use it in combination with a `ormconfig.js`
 ```js
 // Use require instead of import
 // const SnakeNamingStrategy = require("typeorm-naming-strategy").SnakeNamingStrategy
-const SnakeNamingStrategy = require("typeorm-naming-strategy")
+const SnakeNamingStrategy = require('typeorm-naming-strategy')
 
 module.exports = {
-  //...
+  // ...
   namingStrategy: new SnakeNamingStrategy(),
 }
 ```
@@ -66,10 +66,10 @@ module.exports = {
 Or you can use it in combination with a `ormconfig.ts`
 
 ```ts
-import SnakeNamingStrategy from 'typeorm-naming-strategy';
+import SnakeNamingStrategy from 'typeorm-naming-strategy'
 
 module.exports = {
-  //...
+  // ...
   namingStrategy: new SnakeNamingStrategy(),
 }
 ```
@@ -78,14 +78,12 @@ Use with NestJs configuration
 
 ```ts
 import { registerAs } from '@nestjs/config'
-import type { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions'
 import { SnakeNamingStrategy } from 'typeorm-naming-strategy'
+import type { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions'
 
 export default registerAs('database', (): MysqlConnectionOptions => ({
-    //...
-    namingStrategy: new SnakeNamingStrategy(),
-    //...
-  })
-)
+  // ...
+  namingStrategy: new SnakeNamingStrategy(),
+  // ...
+}))
 ```
-

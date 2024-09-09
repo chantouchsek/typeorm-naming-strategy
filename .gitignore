@@ -64,3 +64,5 @@ typings/
 .next
 
 .idea
+
+.yarn

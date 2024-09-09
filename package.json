@@ -1,15 +1,17 @@
 {
   "name": "typeorm-naming-strategy",
   "version": "2.0.8",
-  "packageManager": "yarn@1.22.22",
+  "packageManager": "yarn@4.4.1",
   "description": "Custom naming strategies for typeorm",
-  "main": "dist/main.js",
-  "types": "dist/main.d.ts",
-  "files": [
-    "dist"
-  ],
-  "engines": {
-    "node": "^12.20.0 || >=14.13.0"
+  "author": {
+    "name": "Chantouch Sek",
+    "email": "chantouchsek.cs83@gmail.com",
+    "url": "https://chantouch.me"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chantouchsek/typeorm-naming-strategy"
   },
   "keywords": [
     "typeorm",
@@ -22,40 +24,33 @@
     "typeorm snake",
     "naming strategies"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chantouchsek/typeorm-naming-strategy"
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": "^12.20.0 || >=14.13.0"
   },
-  "author": {
-    "name": "Chantouch Sek",
-    "email": "chantouchsek.cs83@gmail.com",
-    "url": "https://chantouch.me"
-  },
-  "lint-staged": {
-    "*.{ts,js}": "eslint"
-  },
-  "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
     "test": "vitest --run",
     "test:cov": "vitest run --coverage",
     "prepublish": "yarn build",
     "prepare": "husky",
-    "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
+    "lint": "eslint .",
     "release": "standard-version && git push --follow-tags origin main && yarn publish"
   },
+  "peerDependencies": {
+    "typeorm": "^0.3"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^3.4.1",
     "@commitlint/cli": "^19.4.1",
     "@commitlint/config-conventional": "^19.4.1",
     "@types/node": "^22.5.4",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
     "@vitest/coverage-v8": "^2.0.5",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.30.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-promise": "^7.1.0",
+    "eslint": "^9.10.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
@@ -66,7 +61,7 @@
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
   },
-  "peerDependencies": {
-    "typeorm": "^0.3"
+  "lint-staged": {
+    "*.{ts,js}": "eslint"
   }
 }
