@@ -39,7 +39,7 @@
     "prepublish": "yarn build",
     "prepare": "husky",
     "lint": "eslint .",
-    "release": "standard-version && git push --follow-tags origin main && yarn publish"
+    "release": "standard-version && git push --follow-tags origin main && npm publish"
   },
   "peerDependencies": {
     "typeorm": "^0.3"
