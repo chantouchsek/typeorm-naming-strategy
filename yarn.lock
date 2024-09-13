@@ -16,8 +16,8 @@ __metadata:
   linkType: hard
 
 "@antfu/eslint-config@npm:^3.4.1":
-  version: 3.5.1
-  resolution: "@antfu/eslint-config@npm:3.5.1"
+  version: 3.6.0
+  resolution: "@antfu/eslint-config@npm:3.6.0"
   dependencies:
     "@antfu/install-pkg": "npm:^0.4.1"
     "@clack/prompts": "npm:^0.7.0"
@@ -98,7 +98,7 @@ __metadata:
       optional: true
   bin:
     eslint-config: bin/index.js
-  checksum: 10c0/350495cb52738b26585eef7cd9a886b34a62515e5430539d5060cadf783838c32a1892be0ad33c00d6958533de2dec55a97febfb8a6cf1ba3fb04e260dac5a5e
+  checksum: 10c0/8bd61867c922067111be783d1fe7debd8d0e39d62f7faf53a8ccf194f25b7505c69390aada3c2484c0f585d6f33ca6b55f505d6606a73f63a449b6925af4bcab
   languageName: node
   linkType: hard
 
