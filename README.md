@@ -77,9 +77,9 @@ module.exports = {
 Use with NestJs configuration
 
 ```ts
+import type { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions'
 import { registerAs } from '@nestjs/config'
 import { SnakeNamingStrategy } from 'typeorm-naming-strategy'
-import type { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions'
 
 export default registerAs('database', (): MysqlConnectionOptions => ({
   // ...
