@@ -44,7 +44,7 @@ import { createConnection } from 'typeorm'
 // import { SnakeNamingStrategy } from 'typeorm-naming-strategy';
 import SnakeNamingStrategy from 'typeorm-naming-strategy'
 
-await createConnection({
+createConnection({
   // ...
   namingStrategy: new SnakeNamingStrategy(), // Here you'r using the strategy!
 })
