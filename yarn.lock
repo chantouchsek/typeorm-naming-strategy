@@ -1301,28 +1301,28 @@ __metadata:
   linkType: hard
 
 "@vitest/coverage-v8@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@vitest/coverage-v8@npm:2.1.1"
+  version: 2.1.5
+  resolution: "@vitest/coverage-v8@npm:2.1.5"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@bcoe/v8-coverage": "npm:^0.2.3"
-    debug: "npm:^4.3.6"
+    debug: "npm:^4.3.7"
     istanbul-lib-coverage: "npm:^3.2.2"
     istanbul-lib-report: "npm:^3.0.1"
     istanbul-lib-source-maps: "npm:^5.0.6"
     istanbul-reports: "npm:^3.1.7"
-    magic-string: "npm:^0.30.11"
-    magicast: "npm:^0.3.4"
-    std-env: "npm:^3.7.0"
+    magic-string: "npm:^0.30.12"
+    magicast: "npm:^0.3.5"
+    std-env: "npm:^3.8.0"
     test-exclude: "npm:^7.0.1"
     tinyrainbow: "npm:^1.2.0"
   peerDependencies:
-    "@vitest/browser": 2.1.1
-    vitest: 2.1.1
+    "@vitest/browser": 2.1.5
+    vitest: 2.1.5
   peerDependenciesMeta:
     "@vitest/browser":
       optional: true
-  checksum: 10c0/3deba40edfae79ac4545cadb0786ecf6c8deb72cdfd1ba0f205d84804d241740a7e78892782a3002f87bb5c0a2705ab613fe5f54374f2fe9866cd0a574d65156
+  checksum: 10c0/c6870a8714861fafa5114711d9c2ea56525e6a5e2ebf464e0aea1cb8b79a2fe742e239c0ee210c3e8e916646f799b07707c8bf2a7fd33e0d7f2bc9bd9d938d77
   languageName: node
   linkType: hard
 
@@ -2354,7 +2354,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4, debug@npm:^4.3.6, debug@npm:~4.3.6":
+"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4, debug@npm:^4.3.6, debug@npm:^4.3.7, debug@npm:~4.3.6":
   version: 4.3.7
   resolution: "debug@npm:4.3.7"
   dependencies:
@@ -4397,7 +4397,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magicast@npm:^0.3.4":
+"magic-string@npm:^0.30.12":
+  version: 0.30.12
+  resolution: "magic-string@npm:0.30.12"
+  dependencies:
+    "@jridgewell/sourcemap-codec": "npm:^1.5.0"
+  checksum: 10c0/469f457d18af37dfcca8617086ea8a65bcd8b60ba8a1182cb024ce43e470ace3c9d1cb6bee58d3b311768fb16bc27bd50bdeebcaa63dadd0fd46cac4d2e11d5f
+  languageName: node
+  linkType: hard
+
+"magicast@npm:^0.3.5":
   version: 0.3.5
   resolution: "magicast@npm:0.3.5"
   dependencies:
@@ -6367,6 +6376,13 @@ __metadata:
   version: 3.7.0
   resolution: "std-env@npm:3.7.0"
   checksum: 10c0/60edf2d130a4feb7002974af3d5a5f3343558d1ccf8d9b9934d225c638606884db4a20d2fe6440a09605bca282af6b042ae8070a10490c0800d69e82e478f41e
+  languageName: node
+  linkType: hard
+
+"std-env@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "std-env@npm:3.8.0"
+  checksum: 10c0/f560a2902fd0fa3d648d7d0acecbd19d664006f7372c1fba197ed4c216b4c9e48db6e2769b5fe1616d42a9333c9f066c5011935035e85c59f45dc4f796272040
   languageName: node
   linkType: hard
 
