@@ -15,7 +15,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@antfu/eslint-config@npm:^3.6.2":
+"@antfu/eslint-config@npm:^3.9.2":
   version: 3.9.2
   resolution: "@antfu/eslint-config@npm:3.9.2"
   dependencies:
@@ -206,7 +206,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^19.5.0":
+"@commitlint/cli@npm:^19.6.0":
   version: 19.6.0
   resolution: "@commitlint/cli@npm:19.6.0"
   dependencies:
@@ -223,7 +223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^19.5.0":
+"@commitlint/config-conventional@npm:^19.6.0":
   version: 19.6.0
   resolution: "@commitlint/config-conventional@npm:19.6.0"
   dependencies:
@@ -1128,12 +1128,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.5.5":
+"@types/node@npm:*":
   version: 22.9.1
   resolution: "@types/node@npm:22.9.1"
   dependencies:
     undici-types: "npm:~6.19.8"
   checksum: 10c0/ea489ae603aa8874e4e88980aab6f2dad09c755da779c88dd142983bfe9609803c89415ca7781f723072934066f63daf2b3339ef084a8ad1a8079cf3958be243
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^22.9.3":
+  version: 22.9.3
+  resolution: "@types/node@npm:22.9.3"
+  dependencies:
+    undici-types: "npm:~6.19.8"
+  checksum: 10c0/954ec72bf29436ea62425a9563914a9c1e93f97b18194acd51d74d13998a701977547ed2985ed3a0e97211b785436d28377116e5f613bfcf3182d9bd81d784dc
   languageName: node
   linkType: hard
 
@@ -1452,29 +1461,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-v8@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@vitest/coverage-v8@npm:2.1.1"
+"@vitest/coverage-v8@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@vitest/coverage-v8@npm:2.1.5"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@bcoe/v8-coverage": "npm:^0.2.3"
-    debug: "npm:^4.3.6"
+    debug: "npm:^4.3.7"
     istanbul-lib-coverage: "npm:^3.2.2"
     istanbul-lib-report: "npm:^3.0.1"
     istanbul-lib-source-maps: "npm:^5.0.6"
     istanbul-reports: "npm:^3.1.7"
-    magic-string: "npm:^0.30.11"
-    magicast: "npm:^0.3.4"
-    std-env: "npm:^3.7.0"
+    magic-string: "npm:^0.30.12"
+    magicast: "npm:^0.3.5"
+    std-env: "npm:^3.8.0"
     test-exclude: "npm:^7.0.1"
     tinyrainbow: "npm:^1.2.0"
   peerDependencies:
-    "@vitest/browser": 2.1.1
-    vitest: 2.1.1
+    "@vitest/browser": 2.1.5
+    vitest: 2.1.5
   peerDependenciesMeta:
     "@vitest/browser":
       optional: true
-  checksum: 10c0/3deba40edfae79ac4545cadb0786ecf6c8deb72cdfd1ba0f205d84804d241740a7e78892782a3002f87bb5c0a2705ab613fe5f54374f2fe9866cd0a574d65156
+  checksum: 10c0/c6870a8714861fafa5114711d9c2ea56525e6a5e2ebf464e0aea1cb8b79a2fe742e239c0ee210c3e8e916646f799b07707c8bf2a7fd33e0d7f2bc9bd9d938d77
   languageName: node
   linkType: hard
 
@@ -3226,7 +3235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.10.0":
+"eslint@npm:^9.15.0":
   version: 9.15.0
   resolution: "eslint@npm:9.15.0"
   dependencies:
@@ -3916,7 +3925,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^9.1.6":
+"husky@npm:^9.1.7":
   version: 9.1.7
   resolution: "husky@npm:9.1.7"
   bin:
@@ -4606,15 +4615,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.30.11":
-  version: 0.30.11
-  resolution: "magic-string@npm:0.30.11"
-  dependencies:
-    "@jridgewell/sourcemap-codec": "npm:^1.5.0"
-  checksum: 10c0/b9eb370773d0bd90ca11a848753409d8e5309b1ad56d2a1aa49d6649da710a6d2fe7237ad1a643c5a5d3800de2b9946ed9690acdfc00e6cc1aeafff3ab1752c4
-  languageName: node
-  linkType: hard
-
 "magic-string@npm:^0.30.12":
   version: 0.30.13
   resolution: "magic-string@npm:0.30.13"
@@ -4624,7 +4624,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magicast@npm:^0.3.4":
+"magicast@npm:^0.3.5":
   version: 0.3.5
   resolution: "magicast@npm:0.3.5"
   dependencies:
@@ -6590,13 +6590,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"std-env@npm:^3.7.0":
-  version: 3.7.0
-  resolution: "std-env@npm:3.7.0"
-  checksum: 10c0/60edf2d130a4feb7002974af3d5a5f3343558d1ccf8d9b9934d225c638606884db4a20d2fe6440a09605bca282af6b042ae8070a10490c0800d69e82e478f41e
-  languageName: node
-  linkType: hard
-
 "std-env@npm:^3.8.0":
   version: 3.8.0
   resolution: "std-env@npm:3.8.0"
@@ -7027,21 +7020,21 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "typeorm-naming-strategy@workspace:."
   dependencies:
-    "@antfu/eslint-config": "npm:^3.6.2"
-    "@commitlint/cli": "npm:^19.5.0"
-    "@commitlint/config-conventional": "npm:^19.5.0"
-    "@types/node": "npm:^22.5.5"
-    "@vitest/coverage-v8": "npm:^2.1.1"
-    eslint: "npm:^9.10.0"
-    husky: "npm:^9.1.6"
+    "@antfu/eslint-config": "npm:^3.9.2"
+    "@commitlint/cli": "npm:^19.6.0"
+    "@commitlint/config-conventional": "npm:^19.6.0"
+    "@types/node": "npm:^22.9.3"
+    "@vitest/coverage-v8": "npm:^2.1.5"
+    eslint: "npm:^9.15.0"
+    husky: "npm:^9.1.7"
     lint-staged: "npm:^15.2.10"
     prettier: "npm:^3.3.3"
     rimraf: "npm:^5.0.10"
     standard-version: "npm:^9.5.0"
     ts-node: "npm:^10.9.2"
     typeorm: "npm:^0.3.20"
-    typescript: "npm:^5.6.2"
-    vitest: "npm:^2.1.1"
+    typescript: "npm:^5.7.2"
+    vitest: "npm:^2.1.5"
   peerDependencies:
     typeorm: ^0.3
   languageName: unknown
@@ -7127,23 +7120,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.6.2":
-  version: 5.6.2
-  resolution: "typescript@npm:5.6.2"
+"typescript@npm:^5.7.2":
+  version: 5.7.2
+  resolution: "typescript@npm:5.7.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/3ed8297a8c7c56b7fec282532503d1ac795239d06e7c4966b42d4330c6cf433a170b53bcf93a130a7f14ccc5235de5560df4f1045eb7f3550b46ebed16d3c5e5
+  checksum: 10c0/a873118b5201b2ef332127ef5c63fb9d9c155e6fdbe211cbd9d8e65877283797cca76546bad742eea36ed7efbe3424a30376818f79c7318512064e8625d61622
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.6.2#optional!builtin<compat/typescript>":
-  version: 5.6.2
-  resolution: "typescript@patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"
+"typescript@patch:typescript@npm%3A^5.7.2#optional!builtin<compat/typescript>":
+  version: 5.7.2
+  resolution: "typescript@patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=8c6c40"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/94eb47e130d3edd964b76da85975601dcb3604b0c848a36f63ac448d0104e93819d94c8bdf6b07c00120f2ce9c05256b8b6092d23cf5cf1c6fa911159e4d572f
+  checksum: 10c0/c891ccf04008bc1305ba34053db951f8a4584b4a1bf2f68fd972c4a354df3dc5e62c8bfed4f6ac2d12e5b3b1c49af312c83a651048f818cd5b4949d17baacd79
   languageName: node
   linkType: hard
 
@@ -7348,7 +7341,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:^2.1.1":
+"vitest@npm:^2.1.5":
   version: 2.1.5
   resolution: "vitest@npm:2.1.5"
   dependencies:
