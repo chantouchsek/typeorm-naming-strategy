@@ -16,8 +16,8 @@ __metadata:
   linkType: hard
 
 "@antfu/eslint-config@npm:^3.9.2":
-  version: 3.11.0
-  resolution: "@antfu/eslint-config@npm:3.11.0"
+  version: 3.11.2
+  resolution: "@antfu/eslint-config@npm:3.11.2"
   dependencies:
     "@antfu/install-pkg": "npm:^0.5.0"
     "@clack/prompts": "npm:^0.8.2"
@@ -26,7 +26,7 @@ __metadata:
     "@stylistic/eslint-plugin": "npm:^2.11.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.16.0"
     "@typescript-eslint/parser": "npm:^8.16.0"
-    "@vitest/eslint-plugin": "npm:^1.1.11"
+    "@vitest/eslint-plugin": "npm:^1.1.12"
     eslint-config-flat-gitignore: "npm:^0.3.0"
     eslint-flat-config-utils: "npm:^0.4.0"
     eslint-merge-processors: "npm:^0.1.0"
@@ -98,7 +98,7 @@ __metadata:
       optional: true
   bin:
     eslint-config: bin/index.js
-  checksum: 10c0/7ad03cfad9a5c8b7c5c1d900384b01ec72a95487fbb2339f348cebfb936a7fa82d28377b4ddaec61dad0147e21d5fdc7bc872997c8bed5ea8bfeeb8f75d4b553
+  checksum: 10c0/b4fe849d8e83643eac31c69bbdf9b96e6d8d596f283c8ea23f4b2c983b62a364d56eb26e488f9b7f1bd0712bacde7ea3e5c240f68395877d5033bae4b4e1e237
   languageName: node
   linkType: hard
 
@@ -1378,9 +1378,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/eslint-plugin@npm:^1.1.11":
-  version: 1.1.12
-  resolution: "@vitest/eslint-plugin@npm:1.1.12"
+"@vitest/eslint-plugin@npm:^1.1.12":
+  version: 1.1.13
+  resolution: "@vitest/eslint-plugin@npm:1.1.13"
   peerDependencies:
     "@typescript-eslint/utils": ">= 8.0"
     eslint: ">= 8.57.0"
@@ -1391,7 +1391,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10c0/8eca47da72e51d300234bd21c15e66055ad811c75ab623962eb5ba45e4bb1ce59ecf735aa3b4e53b9d2fe8efb1f013c07c2a302b2a9427362f8f55b1d283a14f
+  checksum: 10c0/179b095dfa0d19c34dcbd52f4a0048b4d1a6827b473b1328c2a8e69be57592e0ab2bebb1686b93c375c4e21ec54887422fc446f5d3f2d1839ba42925cb33685c
   languageName: node
   linkType: hard
 
