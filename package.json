@@ -45,21 +45,21 @@
     "typeorm": "^0.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.9.2",
+    "@antfu/eslint-config": "^3.11.2",
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
-    "@types/node": "^22.9.3",
-    "@vitest/coverage-v8": "^2.1.5",
-    "eslint": "^9.15.0",
+    "@types/node": "^22.10.1",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^9.16.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "rimraf": "^6.0.1",
     "standard-version": "^9.5.0",
     "ts-node": "^10.9.2",
     "typeorm": "^0.3.20",
     "typescript": "^5.7.2",
-    "vitest": "^2.1.5"
+    "vitest": "^2.1.8"
   },
   "lint-staged": {
     "*.{ts,js}": "eslint"
