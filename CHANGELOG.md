@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.16](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.15...v2.0.16) (2025-12-13)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/checkout from 5.0.0 to 6.0.1 ([2d25628](https://github.com/chantouchsek/typeorm-naming-strategy/commit/2d256289ab3e849f64ae129c1b677e2ba8fa8ecb))
+* **deps:** bump actions/setup-node from 4.4.0 to 6.1.0 ([c6b990c](https://github.com/chantouchsek/typeorm-naming-strategy/commit/c6b990cc1e4697c5d00575a09b6bc300f468a0ac))
+* **deps:** bump actions/stale from 9.1.0 to 10.1.1 ([e95cbd3](https://github.com/chantouchsek/typeorm-naming-strategy/commit/e95cbd36f2a841d194b5f622bb6b1a5193050134))
+* remove .DS ([efee3d4](https://github.com/chantouchsek/typeorm-naming-strategy/commit/efee3d4a4831b5dc245aeab7f8c6297a511e80fa))
+
 ### [2.0.15](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.14...v2.0.15) (2025-08-25)
 
 ### [2.0.14](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.13...v2.0.14) (2025-06-09)
