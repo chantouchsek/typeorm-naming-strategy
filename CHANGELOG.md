@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [changelogen](https://github.com/unjs/changelogen) for commit guidelines.
 
+## v2.0.18
+
+[compare changes](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.17...v2.0.18)
+
+### 🏡 Chore
+
+- **deps-dev:** Bump prettier from 3.8.2 to 3.8.3 ([7662b92](https://github.com/chantouchsek/typeorm-naming-strategy/commit/7662b92))
+- Update changelog reference and modify release script to use changelogen ([70df5c4](https://github.com/chantouchsek/typeorm-naming-strategy/commit/70df5c4))
+
+### ❤️ Contributors
+
+- Touch ([@chantouchsek](https://github.com/chantouchsek))
+
 ### [2.0.17](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.16...v2.0.17) (2026-04-13)
 
 
