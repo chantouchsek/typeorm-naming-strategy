@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [changelogen](https://github.com/unjs/changelogen) for commit guidelines.
 
 ### [2.0.17](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.16...v2.0.17) (2026-04-13)
 
