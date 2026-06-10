@@ -27,6 +27,8 @@ In the DB the `createdAt` field will be `created_at`
 
 It's available as an [npm package](https://www.npmjs.com/package/typeorm-naming-strategy)
 
+This package supports TypeORM `^1.0.0`. For TypeORM `0.3.x`, use an earlier release.
+
 ```sh
 npm install typeorm-naming-strategy --save
 ```
@@ -40,11 +42,11 @@ yarn add typeorm-naming-strategy
 ## Usage
 
 ```ts
-import { createConnection } from 'typeorm'
+import { DataSource } from 'typeorm'
 // import { SnakeNamingStrategy } from 'typeorm-naming-strategy';
 import SnakeNamingStrategy from 'typeorm-naming-strategy'
 
-createConnection({
+export const AppDataSource = new DataSource({
   // ...
   namingStrategy: new SnakeNamingStrategy(), // Here you'r using the strategy!
 })
