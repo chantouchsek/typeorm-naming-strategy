@@ -42,7 +42,7 @@
     "release": "changelogen --release && git push --follow-tags origin main && npm publish"
   },
   "peerDependencies": {
-    "typeorm": "^1.0.0"
+    "typeorm": "^1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^9.0.0",

@@ -5955,7 +5955,7 @@ __metadata:
     typescript: "npm:^5.9.3"
     vitest: "npm:^4.1.8"
   peerDependencies:
-    typeorm: ^1.0.0
+    typeorm: ^1.0
   languageName: unknown
   linkType: soft
 
