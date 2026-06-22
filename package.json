@@ -48,7 +48,7 @@
     "@antfu/eslint-config": "^9.0.0",
     "@commitlint/cli": "^21.0.2",
     "@commitlint/config-conventional": "^21.0.2",
-    "@types/node": "^25.9.1",
+    "@types/node": "^26.0.0",
     "@vitest/coverage-v8": "^4.1.8",
     "changelogen": "^0.6.2",
     "eslint": "^10.4.1",
