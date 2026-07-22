@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [changelogen](https://github.com/unjs/changelogen) for commit guidelines.
 
+## v3.0.0
+
+[compare changes](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.19...v3.0.0)
+
+### 🚀 Enhancements
+
+- ✨  add support typeorm 1 ([838d21a](https://github.com/chantouchsek/typeorm-naming-strategy/commit/838d21a))
+
+### 🩹 Fixes
+
+- **deps:** Bump actions/checkout from 6.0.3 to 7.0.0 ([0db0230](https://github.com/chantouchsek/typeorm-naming-strategy/commit/0db0230))
+
+### 🏡 Chore
+
+- **deps-dev:** Bump eslint from 10.4.1 to 10.5.0 ([d5c52ac](https://github.com/chantouchsek/typeorm-naming-strategy/commit/d5c52ac))
+- **deps-dev:** Update dev dependencies to latest versions ([c1ff8de](https://github.com/chantouchsek/typeorm-naming-strategy/commit/c1ff8de))
+- 🔒️  update lock file ([3955ef9](https://github.com/chantouchsek/typeorm-naming-strategy/commit/3955ef9))
+
+### ❤️ Contributors
+
+- Touch ([@chantouchsek](https://github.com/chantouchsek))
+
 ## v2.0.19
 
 [compare changes](https://github.com/chantouchsek/typeorm-naming-strategy/compare/v2.0.18...v2.0.19)
