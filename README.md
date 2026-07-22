@@ -25,7 +25,8 @@ In the DB the `createdAt` field will be `created_at`
 
 ## Installation
 
-It's available as an [npm package](https://www.npmjs.com/package/typeorm-naming-strategy)
+It's available as a [npm package](https://www.npmjs.com/package/typeorm-naming-strategy)
+Compatible with TypeORM `0.3.x` and `1.1.x`.
 
 ```sh
 npm install typeorm-naming-strategy --save
@@ -40,14 +41,16 @@ yarn add typeorm-naming-strategy
 ## Usage
 
 ```ts
-import { createConnection } from 'typeorm'
-// import { SnakeNamingStrategy } from 'typeorm-naming-strategy';
+import { DataSource } from 'typeorm'
 import SnakeNamingStrategy from 'typeorm-naming-strategy'
 
-createConnection({
-  // ...
-  namingStrategy: new SnakeNamingStrategy(), // Here you'r using the strategy!
+const dataSource = new DataSource({
+  type: 'postgres',
+  // other TypeORM options...
+  namingStrategy: new SnakeNamingStrategy(), // Here you're using the strategy!
 })
+
+await dataSource.initialize()
 ```
 
 Alternatively you can use it in combination with a `ormconfig.js`
@@ -77,11 +80,11 @@ module.exports = {
 Use with NestJs configuration
 
 ```ts
-import type { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions'
+import type { DataSourceOptions } from 'typeorm'
 import { registerAs } from '@nestjs/config'
 import { SnakeNamingStrategy } from 'typeorm-naming-strategy'
 
-export default registerAs('database', (): MysqlConnectionOptions => ({
+export default registerAs('database', (): DataSourceOptions => ({
   // ...
   namingStrategy: new SnakeNamingStrategy(),
   // ...
