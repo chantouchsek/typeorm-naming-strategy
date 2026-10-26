@@ -1868,10 +1868,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.21":
-  version: 1.11.21
-  resolution: "dayjs@npm:1.11.21"
-  checksum: 10c0/bd97dfdc4bfea3c66268635690313828b386faa040fbc1f829ff42a2bd748b72c9d9b3c8f9616ce9e61fcb78923f1461a462c969c54b1084458ae1b715898fb0
+"dayjs@npm:^1.11.23":
+  version: 1.11.23
+  resolution: "dayjs@npm:1.11.23"
+  checksum: 10c0/69ab04bf19c676e44ab50cc2fca223d265f3dafd107151ef3b0f3ad74d360c37caa602abe62f87cb25d90bd9f6bee003698af47df5b0dbf10a998b7b5f3bb3f1
   languageName: node
   linkType: hard
 
@@ -2753,6 +2753,13 @@ __metadata:
   version: 1.6.0
   resolution: "get-east-asian-width@npm:1.6.0"
   checksum: 10c0/7e72e9550fd49ca5b246f9af6bb2afc129c96412845ff6556b3274fd44817a381702ca17028efe9866b261a3d44254cbf21e6c90cf05b4b61675630af776d431
+  languageName: node
+  linkType: hard
+
+"get-east-asian-width@npm:^1.5.0":
+  version: 1.7.0
+  resolution: "get-east-asian-width@npm:1.7.0"
+  checksum: 10c0/680a5f611a186e4a065291f31821f7e4ad7742625be814e05b8ab5535c6fa53562bc0333a83138fca5f2e1030ed960a561b2fd4629e0cff0dc68b19cf46d7c53
   languageName: node
   linkType: hard
 
@@ -4718,7 +4725,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strip-ansi@npm:^7.1.0":
+"string-width@npm:^8.2.1":
+  version: 8.3.0
+  resolution: "string-width@npm:8.3.0"
+  dependencies:
+    get-east-asian-width: "npm:^1.5.0"
+    strip-ansi: "npm:^7.1.2"
+  checksum: 10c0/bc354b27772777c314e6792106f01586e959f36abb3d4b8ad46c4d4ee92d5e906acb10c1f3be97a85ae0ba1b11389094bc5672999fc5f03f12d22a4725fa30fe
+  languageName: node
+  linkType: hard
+
+"strip-ansi@npm:^7.1.0, strip-ansi@npm:^7.1.2":
   version: 7.2.0
   resolution: "strip-ansi@npm:7.2.0"
   dependencies:
@@ -4938,19 +4955,19 @@ __metadata:
   linkType: soft
 
 "typeorm@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "typeorm@npm:1.1.0"
+  version: 1.1.2
+  resolution: "typeorm@npm:1.1.2"
   dependencies:
     "@sqltools/formatter": "npm:^1.2.5"
     ansis: "npm:^4.3.1"
-    dayjs: "npm:^1.11.21"
+    dayjs: "npm:^1.11.23"
     debug: "npm:^4.4.3"
     dedent: "npm:^1.7.2"
     reflect-metadata: "npm:^0.2.2"
     sql-highlight: "npm:^6.1.0"
     tinyglobby: "npm:^0.2.17"
     tslib: "npm:^2.8.1"
-    yargs: "npm:^18.0.0"
+    yargs: "npm:^18.1.0"
   peerDependencies:
     "@google-cloud/spanner": ^8.0.0
     "@sap/hana-client": ^2.14.22
@@ -5002,7 +5019,7 @@ __metadata:
     typeorm: cli.js
     typeorm-ts-node-commonjs: cli-ts-node-commonjs.js
     typeorm-ts-node-esm: cli-ts-node-esm.js
-  checksum: 10c0/1457b3420d254aaef0dc037b43d0bf121061ad57501e48f40dd831fec885259ea041a1a0c5a594b305b79233c50953eca9f3fb4b576a1eaea50c1722e27f68e3
+  checksum: 10c0/e02e256775966628f51109dfc295da8893f0ab7b5f5b40bcee8b1a730b995ce6d97bc153d9f4ec8b3fd23c38810a09fc0162ecaf87233b3f902eefa4984cb796
   languageName: node
   linkType: hard
 
@@ -5400,6 +5417,20 @@ __metadata:
     y18n: "npm:^5.0.5"
     yargs-parser: "npm:^22.0.0"
   checksum: 10c0/bf290e4723876ea9c638c786a5c42ac28e03c9ca2325e1424bf43b94e5876456292d3ed905b853ebbba6daf43ed29e772ac2a6b3c5fb1b16533245d6211778f3
+  languageName: node
+  linkType: hard
+
+"yargs@npm:^18.1.0":
+  version: 18.2.0
+  resolution: "yargs@npm:18.2.0"
+  dependencies:
+    cliui: "npm:^9.0.1"
+    escalade: "npm:^3.1.1"
+    get-caller-file: "npm:^2.0.5"
+    string-width: "npm:^8.2.1"
+    y18n: "npm:^5.0.5"
+    yargs-parser: "npm:^22.0.0"
+  checksum: 10c0/7419338c3c00f9143ec6b6ab168335061c6f5342d161642aec23ff119e28cac1c417e0eca1d7dc82fd084f07207cc5d34c7d8315f605c0e3dbf12c350e405f3f
   languageName: node
   linkType: hard
 
