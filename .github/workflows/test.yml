@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   lint-and-test:
     name: Test on node ${{ matrix.node-version }} and ${{ matrix.os }}
